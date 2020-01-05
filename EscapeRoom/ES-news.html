@@ -31,7 +31,7 @@
             margin-bottom: 150px;
             display: flex;
             justify-content: center;
-            cursor:pointer;
+            cursor: pointer;
         }
 
         .card {
@@ -54,14 +54,15 @@
             background-image: url(img/back.png);
             background-repeat: no-repeat;
         }
-        .card_box:hover{
-            transform: rotateY(180deg);
-        }
 
-
-        /* .flipped {
+        /* .card_box:hover{
             transform: rotateY(180deg);
         } */
+
+
+        .flipped {
+            transform: rotateY(180deg);
+        }
 
         @media (max-width: 576px) {
             .pc {
@@ -135,6 +136,13 @@
             .mb-200 {
                 margin-bottom: 75px;
             }
+
+            .flipped {
+                transform: unset;
+            }
+            .flippedPhone {
+            transform: rotateY(180deg);
+        }
 
         }
     </style>
@@ -279,10 +287,13 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
+        $(".card_box").hover(function (event) {
+            $(this).toggleClass("flipped");
+        });
 
-        // $(".card_box").hover(function (event) {
-        //     $(this).toggleClass("flipped");
-        // })
+        $(".card_box").click(function(event){
+            $(this).toggleClass("flippedPhone")
+        })
     </script>
 </body>
 
