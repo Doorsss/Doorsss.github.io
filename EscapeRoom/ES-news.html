@@ -140,9 +140,10 @@
             .flipped {
                 transform: unset;
             }
+
             .flippedPhone {
-            transform: rotateY(180deg);
-        }
+                transform: rotateY(540deg);
+            }
 
         }
     </style>
@@ -291,7 +292,7 @@
             $(this).toggleClass("flipped");
         });
 
-        $(".card_box").click(function(event){
+        $(".card_box").click(function (event) {
             $(this).toggleClass("flippedPhone")
         })
     </script>
