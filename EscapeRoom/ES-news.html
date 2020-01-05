@@ -144,7 +144,6 @@
 
             .flippedPhone {
                 transform: rotateY(180deg);
-                position: relative;
                 z-index: 2;
 
             }
@@ -297,7 +296,7 @@
         });
 
         $(".card_box").click(function (event) {
-            $("card").toggleClass("flippedPhone")
+            $(this).toggleClass("flippedPhone")
         })
     </script>
 </body>
