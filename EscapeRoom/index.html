@@ -94,7 +94,7 @@
             z-index: 100;
         }
 
-        @keyframes deg {
+        /* @keyframes deg {
             from {
                 transform: rotate(0deg);
             }
@@ -134,7 +134,7 @@
             to {
                 top: 100px;
             }
-        }
+        } */
 
         @keyframes run {
             0% {
@@ -181,10 +181,11 @@
             body {
                 transform: rotate(90deg);
             }
-
-            .container {
-                width: 576px;
+            .bg{
+                width: 150%;
             }
+
+
         }
     </style>
 </head>
@@ -196,7 +197,7 @@
                 <div id="scene" class="scene">
                     <div class="z100" data-depth="0.10"><img src="parallax-img/gamename.png"></div>
                     <div class="z1 " data-depth="0.20"><img src="parallax-img/door1.png"></div>
-                    <div class="z3 animation_degZ" data-depth="2.40"><img src="parallax-img/door2.png"></div>
+                    <div class="z3 animation_degZ" data-depth="1.00"><img src="parallax-img/door2.png"></div>
                     <div class="z3" data-depth="0.60"><img src="parallax-img/door3.png"></div>
                     <div class="z3" data-depth="0.90"><img src="parallax-img/door4.png"></div>
                     <div class="z5" data-depth="0.30"><img src="parallax-img/door5.png"></div>
@@ -211,7 +212,7 @@
                     <div class="animation_left" data-depth="0.80"><img src="parallax-img/lock1.png"></div>
                     <div class="z3 animation_left" data-depth="0.60"><img src="parallax-img/letter.png"></div>
                     <div class="animation_top" data-depth="0.70"><img src="parallax-img/key2.png"></div>
-                    <div class="animation_left" data-depth="1.90"><img src="parallax-img/key1.png"></div>
+                    <div class="animation_left" data-depth="0.60"><img src="parallax-img/key1.png"></div>
                     <div class="z1" data-depth="0.20"><img src="parallax-img/Cone.png"></div>
 
 
