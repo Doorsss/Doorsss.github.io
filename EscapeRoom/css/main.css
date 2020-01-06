@@ -136,6 +136,19 @@ ul li {
     margin-bottom: 150px;
 }
 /* header+footer RWD */
+@media(max-width:1420 px ){
+    .nav {
+        padding: 0 150px;
+    }
+
+}
+@media(max-width:1205 px ){
+    .nav {
+        padding: 0 50px;
+    }
+
+}
+
 @media (max-width: 576px) {
     .pc {
         display: none;
