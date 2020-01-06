@@ -19,15 +19,63 @@
         body {
 
             background-color: #23220C;
+
         }
 
         .box {
             height: 792px;
+            background-color: #ADB241;
+            background-image: url('img/fee-background.png');
+            padding: 120px 0;
+        }
+
+        .fee-Charter {
+            font-size: 36px;
+            color: white;
+        }
+
+        .fee-CharterText {
+            text-align: center;
+            color: white;
+            font-size: 36px;
+        }
+
+        hr {
+            border-top: 2px solid white;
+            margin: 30px 0;
         }
 
         .mb-200 {
             margin-bottom: 200px;
         }
+
+        .fee-cost {
+            font-size: 24px;
+            line-height: 2;
+            color: white;
+            text-align: center;
+        }
+
+        .lock {
+            position: relative;
+            padding: 36px 0 0 95px;
+        }
+
+        .lock::before {
+            content: "";
+            background: url('/img/lock.png');
+            display: inline-block;
+            width: 23px;
+            height: 19px;
+            position: absolute;
+            top: 39px;
+            left: 65px;
+        }
+
+        .rule {
+            color: #21210C;
+        }
+
 
         @media(max-width:1420px) {
             .nav {
@@ -122,6 +170,27 @@
                 bottom: 30px;
             }
 
+            /* .feePhone {
+                height: 688px;
+                background-color: #ADB241;
+                background-image: url('img/fee-PhoneBackground.png');
+                background-size: contain;
+                padding: 50px 0;
+            } */
+
+            .feePhoneText {
+                color: white;
+                text-align: center;
+            }
+
+            .feePhoneText-1 {
+                font-size: 20px;
+            }
+
+            /* .feePhonecontan {
+                /* height: 60px; */
+            } */
+
         }
     </style>
 </head>
@@ -170,11 +239,56 @@
 
     <section class="mb-200">
         <div class="container box pc">
-            <div><img width="100%" src="img/toll.png" alt=""></div>
+            <div class="row fee-Charter justify-content-center">
+                <div class="col-lg-3 col-sm-3"><img width="100%" src="/img/fee-Charter.png" alt=""></div>
+                <div class="col-lg-3 col-sm-3"><img width="100%" src="/img/fee-Fight.png" alt=""></div>
+            </div>
+            <div class="row justify-content-center fee-CharterText">
+                <div class="col-lg-3 col-sm-3">
+                    <p>包場</p>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <p>拼組</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-sm-7">
+                    <hr>
+                </div>
+            </div>
+            <div class="row justify-content-center fee-cost">
+                <div class="col-lg-3 col-sm-3">
+                    <p>平日1599元/場</p>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <p>平日250元/場</p>
+                </div>
+            </div>
+            <div class="row justify-content-center fee-cost">
+                <div class="col-lg-3 col-sm-3">
+                    <p>假日1999元/場</p>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <p>假日300元/場</p>
+                </div>
+            </div>
+            <div class="row justify-content-center rule">
+                <div class="col-lg-8 col-sm-8 lock">包場最多為8位進場</div>
+                <div class="col-lg-8 col-sm-8 lock">併組需提前一天預約，方便幫您安排其他挑戰者一同挑戰。</div>
+                <div class="col-lg-8 col-sm-8 lock">每場挑戰為60分鐘，加上活動前準備與挑戰後拍照，全程請預留90分鐘以上活動時間。</div>
+            </div>
         </div>
-        <div class="conrainer d-sm-none d-flex justify-content-center">
-            <div class="row">
-                <div class="col-12"><img width="100%" src="img/toll-mb.png" alt=""></div>
+        <div class="container d-sm-none d-flex justify-content-center feePhone">
+            <img width="" src="/img/toll-mb.png" alt="">
+            <!-- <div class="row justify-content-center feePhoneText">
+                <div class="col-12 feePhonecontan"><img src="/img/fee-Charter-phone.png" alt="">
+                    <h2>包場</h2>
+                    <p class="feePhoneText-1">平日1599元/場 <br>假日1999元/場 </p class="">
+                </div>
+                <div class="col-12 feePhonecontan"><img src="/img/fee-Charter-phone.png" alt="">
+                    <h2>包場</h2>
+                    <p class="feePhoneText-1">平日1599元/場 <br>假日1999元/場 </p class="">
+                </div> -->
             </div>
 
         </div>
