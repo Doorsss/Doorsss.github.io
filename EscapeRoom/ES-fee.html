@@ -55,6 +55,22 @@
             color: white;
             text-align: center;
         }
+        .phonelock{
+            position: relative;
+            color: #23220C;
+            text-align: left;
+            left: 15px;
+        }
+        .phonelock::before {
+            content:"";
+            background: url('./img/lock-phone.png');
+            display: inline-block;
+            width: 23px;
+            height: 19px;
+            position: absolute;
+            top: 1px;
+            left: -20px;
+        }
 
         .lock {
             position: relative;
@@ -62,8 +78,8 @@
         }
 
         .lock::before {
-            content: "";
-            background: url('/img/lock.png');
+            content:"";
+            background: url('./img/lock.png');
             display: inline-block;
             width: 23px;
             height: 19px;
@@ -74,6 +90,9 @@
 
         .rule {
             color: #21210C;
+        }
+        .mr-20{
+            margin-right: 20px;
         }
 
 
@@ -170,25 +189,27 @@
                 bottom: 30px;
             }
 
-            /* .feePhone {
-                height: 688px;
+            .feePhone {
                 background-color: #ADB241;
                 background-image: url('img/fee-PhoneBackground.png');
                 background-size: contain;
+                /* max-width: 575px; */
+                margin: 0 15px;
                 padding: 50px 0;
-            } */
+            }
 
             .feePhoneText {
                 color: white;
                 text-align: center;
+                line-height: 2;
             }
 
             .feePhoneText-1 {
                 font-size: 20px;
             }
-
-            /* .feePhonecontan {
-                /* height: 60px; */
+/* 
+            .feePhonecontan {
+                height: 60px;
             } */
 
         }
@@ -240,15 +261,15 @@
     <section class="mb-200">
         <div class="container box pc">
             <div class="row fee-Charter justify-content-center">
-                <div class="col-lg-3 col-sm-3"><img width="100%" src="/img/fee-Charter.png" alt=""></div>
-                <div class="col-lg-3 col-sm-3"><img width="100%" src="/img/fee-Fight.png" alt=""></div>
+                <div class="col-lg-3 col-sm-3"><img width="100%" src="./img/fee-Charter.png" alt=""></div>
+                <div class="col-lg-3 col-sm-3"><img width="100%" src="./img/fee-Fight.png" alt=""></div>
             </div>
             <div class="row justify-content-center fee-CharterText">
                 <div class="col-lg-3 col-sm-3">
                     <p>包場</p>
                 </div>
                 <div class="col-lg-3 col-sm-3">
-                    <p>拼組</p>
+                    <p>併組</p>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -273,22 +294,26 @@
                 </div>
             </div>
             <div class="row justify-content-center rule">
-                <div class="col-lg-8 col-sm-8 lock">包場最多為8位進場</div>
-                <div class="col-lg-8 col-sm-8 lock">併組需提前一天預約，方便幫您安排其他挑戰者一同挑戰。</div>
-                <div class="col-lg-8 col-sm-8 lock">每場挑戰為60分鐘，加上活動前準備與挑戰後拍照，全程請預留90分鐘以上活動時間。</div>
+                <div class="col-lg-8 col-sm-8 lock"> 包場最多為8位進場</div>
+                <div class="col-lg-8 col-sm-8 lock"> 併組需提前一天預約，方便幫您安排其他挑戰者一同挑戰。</div>
+                <div class="col-lg-8 col-sm-8 lock"> 每場挑戰為60分鐘，加上活動前準備與挑戰後拍照，全程請預留90分鐘以上活動時間。</div>
             </div>
         </div>
-        <div class="container d-sm-none d-flex justify-content-center feePhone">
-            <img width="" src="/img/toll-mb.png" alt="">
-            <!-- <div class="row justify-content-center feePhoneText">
-                <div class="col-12 feePhonecontan"><img src="/img/fee-Charter-phone.png" alt="">
+        <div class="d-sm-none d-flex justify-content-center feePhone">
+            <!-- <img width="" src="/img/toll-mb.png" alt=""> -->
+            <div class="row justify-content-center feePhoneText">
+                <div class="col-12 feePhonecontan"><img src="./img/fee-Charter-phone.png" alt="">
                     <h2>包場</h2>
                     <p class="feePhoneText-1">平日1599元/場 <br>假日1999元/場 </p class="">
                 </div>
-                <div class="col-12 feePhonecontan"><img src="/img/fee-Charter-phone.png" alt="">
+                <div class="col-12 feePhonecontan"><img src="./img/fee-Charter-phone.png" alt="">
                     <h2>包場</h2>
                     <p class="feePhoneText-1">平日1599元/場 <br>假日1999元/場 </p class="">
-                </div> -->
+                </div>
+                <div class="col-10"><hr></div>
+                <div class="col-9 phonelock">包場最多為8位進場</div>
+                <div class="col-9 phonelock">併組需提前一天預約，方便幫您安排其他挑戰者一同挑戰。</div>
+                <div class="col-9 phonelock">每場挑戰為60分鐘，加上活動前準備與挑戰後拍照，全程請預留90分鐘以上活動時間。</div>
             </div>
 
         </div>
