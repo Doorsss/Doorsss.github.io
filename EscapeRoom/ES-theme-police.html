@@ -106,50 +106,50 @@
         .parallax1 {
             transform: translateY(-50%);
         }
-        .boxShadolTop{
+
+        .boxShadolTop {
             width: 640px;
             height: 485px;
             border: 1px solid transparent;
             border-width: 6px;
-            border-image: linear-gradient(to right, rgba(173, 178, 65,1) 0%, rgba(173, 178, 65,2) 100%);
+            border-image: linear-gradient(to right, rgba(173, 178, 65, 1) 0%, rgba(173, 178, 65, 2) 100%);
             border-image-slice: 1;
             position: absolute;
             transform: translateX(-5%) rotate(-4deg);
             transform: skewY(-4deg);
             left: -30px;
         }
-        .boxShadolBot{
+
+        .boxShadolBot {
             width: 640px;
             height: 504px;
             border: 1px solid transparent;
             border-width: 6px;
-            border-image: linear-gradient(to right, rgba(173, 178, 65,1) 0%, rgba(173, 178, 65,2) 100%);
+            border-image: linear-gradient(to right, rgba(173, 178, 65, 1) 0%, rgba(173, 178, 65, 2) 100%);
             border-image-slice: 1;
             position: absolute;
             transform: translateX(-5%) rotate(-4deg);
             transform: skewY(-4deg);
-            right:-22px;
+            right: -22px;
             top: 695px;
         }
 
-
-
-        /* .borderKinfeTop {
-            width: 70%;
-            border: 1px solid transparent;
-            border-width: 0 0 6px 0;
-            border-image: linear-gradient(to right, rgba(173, 178, 65,1) 0%, rgba(173, 178, 65,2) 100%);
-            border-image-slice: 1;
-            transform: rotate(-4deg);
+        .themeBtn {
+            width: 200px;
+            
+            text-align: center;
+            color: white;
+            margin-top: 75px;
+            border: 1px solid white;
+            font-size: 36px;
+            transition: 500ms;
         }
-        .borderKinfeLeft{
-            border: 1px solid transparent;
-            border-width: 0 0 0 6px;
-            border-image: linear-gradient(to right, rgba(173, 178, 65,1) 0%, rgba(173, 178, 65,2) 100%);
-            border-image-slice: 1;
-            width: 100%;
-            transform: translate();
-        } */
+        .themeBtn:hover{
+            background: rgba(255, 255, 255, 0.85);
+            color: black;
+        }
+
+
 
         @keyframes turn {
             0% {
@@ -384,7 +384,7 @@
             <div class="boxShadolTop"></div>
             <div class="boxShadolBot"></div>
             <div class="row d-flax justify-content-between align-items-center">
-                <div class="col-12 col-lg-7 ">   
+                <div class="col-12 col-lg-7 ">
                     <div id="example" data-zoomed="img/knife-after.png">
                         <img width="100%" height="100%" src="img/knife.png" alt="Example" /></div>
                     <img class="mobile mb-50" width="100%" height="100%" src="img/knife.png" alt="Example" />
@@ -434,7 +434,7 @@
 
     <section>
         <div class="container-fluid game-rules">
-            <div class="container">
+            <div class="container ">
                 <div class="row">
                     <div class="col-lg-4 ">
                         <div class="row justify-content-center">
@@ -459,6 +459,9 @@
                                 19:30</p class="speakerBoss">
                         </div>
                     </div>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="col-lg-2 themeBtn"> <a href="/EscapeRoom/ES-theme-bomb.html"></a> NEXT</div>
                 </div>
             </div>
         </div>
