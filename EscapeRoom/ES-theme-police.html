@@ -106,6 +106,38 @@
         .parallax1 {
             transform: translateY(-50%);
         }
+        .boxShadolTop{
+            width: 640px;
+            height: 485px;
+            border: 1px solid transparent;
+            border-width: 6px;
+            border-image: linear-gradient(to right, rgba(173, 178, 65,1) 0%, rgba(173, 178, 65,2) 100%);
+            border-image-slice: 1;
+            position: absolute;
+            transform: translateX(-5%) rotate(-4deg);
+            transform: skewY(-4deg);
+            left: -30px;
+
+        }
+
+
+
+        /* .borderKinfeTop {
+            width: 70%;
+            border: 1px solid transparent;
+            border-width: 0 0 6px 0;
+            border-image: linear-gradient(to right, rgba(173, 178, 65,1) 0%, rgba(173, 178, 65,2) 100%);
+            border-image-slice: 1;
+            transform: rotate(-4deg);
+        }
+        .borderKinfeLeft{
+            border: 1px solid transparent;
+            border-width: 0 0 0 6px;
+            border-image: linear-gradient(to right, rgba(173, 178, 65,1) 0%, rgba(173, 178, 65,2) 100%);
+            border-image-slice: 1;
+            width: 100%;
+            transform: translate();
+        } */
 
         @keyframes turn {
             0% {
@@ -337,8 +369,9 @@
     <section class="relative mb-50">
         <div class="container-fluid blockade"></div>
         <div class="container parallax1">
+            <div class="boxShadolTop"></div>
             <div class="row d-flax justify-content-between align-items-center">
-                <div class="col-12 col-lg-7">
+                <div class="col-12 col-lg-7 ">   
                     <div id="example" data-zoomed="img/knife-after.png">
                         <img width="100%" height="100%" src="img/knife.png" alt="Example" /></div>
                     <img class="mobile mb-50" width="100%" height="100%" src="img/knife.png" alt="Example" />
