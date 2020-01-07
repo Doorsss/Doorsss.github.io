@@ -117,7 +117,19 @@
             transform: translateX(-5%) rotate(-4deg);
             transform: skewY(-4deg);
             left: -30px;
-
+        }
+        .boxShadolBot{
+            width: 640px;
+            height: 504px;
+            border: 1px solid transparent;
+            border-width: 6px;
+            border-image: linear-gradient(to right, rgba(173, 178, 65,1) 0%, rgba(173, 178, 65,2) 100%);
+            border-image-slice: 1;
+            position: absolute;
+            transform: translateX(-5%) rotate(-4deg);
+            transform: skewY(-4deg);
+            right:-22px;
+            top: 695px;
         }
 
 
@@ -370,6 +382,7 @@
         <div class="container-fluid blockade"></div>
         <div class="container parallax1">
             <div class="boxShadolTop"></div>
+            <div class="boxShadolBot"></div>
             <div class="row d-flax justify-content-between align-items-center">
                 <div class="col-12 col-lg-7 ">   
                     <div id="example" data-zoomed="img/knife-after.png">
