@@ -25,6 +25,83 @@
             padding: 0;
             margin: 0;
         }
+        .nav {
+            width: 100%;
+            height: 80px;
+            background-color: #3E7794;
+            padding: 0 250px;
+
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            margin-bottom: unset;
+        }
+
+        ul li {
+            list-style: none;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 30px;
+            line-height: 80px;
+            color: white;
+
+        }
+
+        .nav-btn-group ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-btn-group ul li {
+            display: inline-block;
+        }
+
+        .nav a {
+            color: white;
+        }
+
+
+        .information {
+            width: 100%;
+            height: 180px;
+            background-color: #549FB6 ;
+        }
+
+        .logoName {
+            font-size: 28.6px;
+            padding: 0 10px;
+            color: white;
+        }
+
+        .gameName {
+            font-size: 10.73px;
+            margin: 0;
+        }
+
+        .info {
+            font-size: 18px;
+            line-height: 2;
+            color: white;
+        }
+
+        .copyright {
+            width: 100%;
+            height: 80px;
+            background-color: #0A0F20;
+            color: #549FB6;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .gotop {
+            position: fixed;
+            right: 61px;
+            bottom: 61px;
+        }
 
         @media(max-width:576px) {
             .pc {
@@ -110,6 +187,55 @@
                 background: rgba(255, 255, 255, 0.85);
                 color: black;
             }
+            .nav {
+                padding: 0 30px;
+                height: 60px;
+            }
+
+            .ham {
+                width: 40px;
+                height: 40px;
+                position: relative;
+                background-image: url(./doctorImg/menu_d.png);
+                background-size: cover;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 20;
+                color: white;
+            }
+
+            .ham ul {
+                position: absolute;
+                top: 44px;
+                left: -2000px;
+                width: 100vw;
+                transition: 500ms;
+                background: #3E7794;
+                z-index: 20;
+                color: white;
+            }
+
+            .ham ul li {
+                margin: 0;
+                color: white;
+            }
+
+            .ham:hover ul {
+                left: 60px;
+                top: 44px;
+                transform: translateX(-100%);
+            }
+
+            .info {
+                font-size: 14px;
+            }
+
+            .gotop {
+                right: 30px;
+                bottom: 30px;
+            }
+
+            
 
 
 
@@ -118,10 +244,35 @@
 </head>
 
 <body>
-    <img src="./doctorImg/bot_bg_p.png" alt="">
-
 
     <!-- 手機 -->
+    <header>
+        <nav id="navbar" class="nav d-flex justify-content-between">
+            <div class="navLogo lg-4 d-flex align-items-center justify-content-center">
+                <img src="img/logo.png" alt="">
+                <b class="logoName"><a href="/EscapeRoom/index.html">許多門</a></b>
+                <p class="gameName"></p><a href="/EscapeRoom/index.html">ESCAPE <br>STUDIOS </a></p>
+            </div>
+            <div class="nav-btn-group pc">
+                <ul>
+                    <li><a href="/EscapeRoom/ES-aboutEscape.html">關於密室逃脫</a></li>
+                    <li><a href="/EscapeRoom/ES-news.html">最新消息</a></li>
+                    <li><a href="/EscapeRoom/ES-aboutES.html">關於許多門</a></li>
+                    <li><a href="/EscapeRoom/ES-theme.html">主題介紹</a></li>
+                    <li><a href="/EscapeRoom/ES-fee.html">收費方式</a></li>
+                </ul>
+            </div>
+            <div class="ham mobile">
+                <ul>
+                    <li><a href="/EscapeRoom/ES-aboutEscape.html">關於密室逃脫</a></li>
+                    <li><a href="/EscapeRoom/ES-news.html">最新消息</a></li>
+                    <li><a href="/EscapeRoom/ES-aboutES.html">關於許多門</a></li>
+                    <li><a href="/EscapeRoom/ES-theme.html">主題介紹</a></li>
+                    <li><a href="/EscapeRoom/ES-fee.html">收費方式</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <main class="phone">
         <div class="box">
@@ -205,6 +356,32 @@
 
 
     </main>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="information d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 d-sm-flex align-items-center justify-content-center d-none">
+                            <img src="img/logo.png" alt="">
+                            <b class="logoName">許多門</b>
+                            <p class="gameName">ESCAPE <br>STUDIOS </p>
+                        </div>
+                        <div class="col-lg-7 col-9">
+                            <b class="info">台中市西區公益路155巷9號2樓（公益路勤美誠品斜對面）<br> TEL 04-23020080
+                                /
+                                0971283166</b>
+                        </div>
+                        <div class="col-lg-1 col-3 d-flex align-items-center justify-content-center">
+                            <a href="https://www.facebook.com/TCDOORSSS"><img src="./doctorImg/fb_d_p.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">Copyright &copy; 許多門 Inc. All rights reserved</div>
+            <div class="gotop"><a href="#navbar"><img src="img/gotop.png" alt=""></a></div>
+        </div>
+    </footer>
 
 
 
