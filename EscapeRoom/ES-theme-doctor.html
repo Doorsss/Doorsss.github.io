@@ -78,9 +78,37 @@
                 line-height: 3;
                 color: #549FB6;
             }
-            .titleName{
+
+            .titleName {
                 color: #3E7794;
                 font-size: 36px;
+            }
+
+            .game-rules {
+                width: 100%;
+                height: 900px;
+                background-image: url(./doctorImg/bot_bg_p.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                padding: 75px 0;
+
+            }
+
+            .themeBtn {
+                width: 200px;
+
+                text-align: center;
+                color: white;
+                margin-top: 70px;
+                border: 1px solid white;
+                font-size: 36px;
+                transition: 500ms;
+            }
+
+            .themeBtn:hover {
+                background: rgba(255, 255, 255, 0.85);
+                color: black;
             }
 
 
@@ -90,7 +118,7 @@
 </head>
 
 <body>
-
+    <img src="./doctorImg/bot_bg_p.png" alt="">
 
 
     <!-- 手機 -->
@@ -136,12 +164,44 @@
                         <span class="speakerBoss">你臨危受命要潛入調查上官大夫的祕密。</span> br>
                         <span class="speakerloser">希望這不會是一趟有去無回的任務......</span></p>
                 </div>
-                <div class="col-12"><img src="./img/key.png" alt=""> </div>
+                <div class="col-12"><img src="./doctorImg/key_d_p.png" alt=""> </div>
                 <p class="titleName">特別提醒</p>
                 <p class="speakerBoss"> 要揭穿御醫的詭計，必須了解各種藥理針灸醫術， 記憶與理解的情報很多，也可能有陰森血腥的場景。</p>
-
             </div>
         </div>
+        <section>
+            <div class="container-fluid game-rules">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-lg-4 ">
+                            <div class="row justify-content-center">
+                                <img class="" src="./doctorImg/people_d_p.png" alt="">
+                                <p class="titleName text-center col-12">挑戰人數</p>
+                                <p class="speakerBoss text-center col-12">4-8人</p class="speakerBoss">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row justify-content-center">
+                                <img class="" src="./doctorImg/time_d_p.png" alt="">
+                                <p class="titleName text-center col-12">挑戰時間</p>
+                                <p class="speakerBoss text-center col-12">60分鐘</p class="speakerBoss">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div class="row justify-content-center">
+                                <img class="" src="./doctorImg/key_d_p.png" alt="">
+                                <p class="titleName text-center col-12">場次時間</p>
+                                <p class="speakerBoss text-center col-12">11:20 / 12:40 / 14:10 / 15:40 / <br> 17:10 /
+                                    18:30 / 19:50</p class="speakerBoss">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-2 themeBtn"> <a href="/EscapeRoom/ES-theme-bomb.html">BACK</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
