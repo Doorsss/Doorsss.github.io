@@ -57,13 +57,25 @@
         }
 
         .narrative {
-            padding: 250px 0;
-            border: 2px solid transparent;
+            margin-top: 150px;
+            padding: 100px 0;
+            /* border: 2px solid transparent;
             border-width: 2px 0 2px 0;
             border-image: linear-gradient(to right, #B0B63F 0%, #21210C 100%);
-            border-image-slice: 1;
-            border-left: 2px solid #B0B63F;
+            border-image-slice: 1; */
+
         }
+        .narrative:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 6%;
+        bottom: auto;
+        right: auto;
+        height: 52%;
+        width: 5px;
+        background-color: #a89d9e;
+    }
 
         .aboutES-open {
             background-image: url(img/aboutES-open.jpg);
