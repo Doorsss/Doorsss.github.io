@@ -30,7 +30,7 @@
             margin: unset;
             width: 100%;
             height: 517px;
-            object-fit:cover;
+            object-fit: cover;
         }
 
         h2 {
@@ -65,17 +65,38 @@
             border-image-slice: 1; */
 
         }
-        .narrative:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 6%;
-        bottom: auto;
-        right: auto;
-        height: 52%;
-        width: 5px;
-        background-color: #a89d9e;
-    }
+
+        .bl:before {
+            content: '';
+            position: absolute;
+            bottom: auto;
+            right: auto;
+            height: 52%;
+            width: 5px;
+            right: 17%;
+            background: linear-gradient(#B0B63F 0%, #21210C 100%);
+        }
+        .br:before {
+            content: '';
+            position: absolute;
+            bottom: auto;
+            right: auto;
+            height: 52%;
+            width: 5px;
+            background: linear-gradient(#B0B63F 0%, #21210C 100%);
+        }
+        .bl:after {
+            content: '';
+            position: absolute;
+            bottom: auto;
+            right: auto;
+            height: 52%;
+            width: 5px;
+            background: linear-gradient(#21210C 0%, #B0B63F 100%);
+            transform: rotate(90deg);
+        }
+        
+
 
         .aboutES-open {
             background-image: url(img/aboutES-open.jpg);
@@ -280,8 +301,8 @@
         </div>
     </section>
     <section>
-        <div class="container narrative">
-            <div class="row d-flex justify-content-center">
+        <div class="container narrative  br bl">
+            <div class="row d-flex justify-content-center bl">
                 <div class="col-lg-7 text-lg-center">
                     <h2>結合『實境解謎』+『團體動力』</h2>
                     <p class="LH-48">『許多門』從2013年11月開始,已經設計過十多個完全不同風格的 <br> 挑戰主題,
@@ -307,7 +328,8 @@
                 <p class="titleName">交通</p>
             </div>
             <div class="row d-flex justify-content-center mtb-75">
-                <div class="col-12 col-lg-7 pc justify-content-center "><a href="https://g.page/Tkydoorsss?share"><img src="img/traffic.png" alt=""></a></div>
+                <div class="col-12 col-lg-7 pc justify-content-center "><a href="https://g.page/Tkydoorsss?share"><img
+                            src="img/traffic.png" alt=""></a></div>
                 <div class="col-lg-12 d-sm-none d-flex justify-content-center"><img src="img/traffic1.png" alt=""></div>
             </div>
         </div>
