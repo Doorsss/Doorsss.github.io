@@ -17,7 +17,6 @@
             padding: 0 250px;
         }
 
-
         .Border {
             width: 70%;
             height: 70vh;
@@ -142,6 +141,29 @@
             background-image: url(img/bot_bg.jpg);
         }
 
+        .themeBtn {
+                width: 200px;
+                text-align: center;
+                color: white;
+                margin-top: 70px;
+                border: 1px solid white;
+                font-size: 36px;
+                transition: .5s;
+            }
+
+            .themeBtn:hover {
+                background: rgba(255, 255, 255, 0.85);
+                color: black;
+            }
+
+            .themeBtn:hover.themeBtn a {
+                color: black;
+            }
+
+            .themeBtn a {
+                color: white;
+            }
+
         .information {
             width: 100%;
             height: 180px;
@@ -253,10 +275,6 @@
             bottom: 61px;
         }
 
-        .themeBtn a {
-            color: white;
-        }
-
         .phone {
             display: none;
 
@@ -264,10 +282,10 @@
 
 
         @media(max-width:576px) {
-            html{
-                overflow: scroll !important ; 
+            html {
+                overflow: scroll !important;
             }
-            
+
             .pc {
                 display: none;
                 height: 100%;
@@ -275,7 +293,6 @@
 
             .phone {
                 display: block;
-
             }
 
             .box {
@@ -335,22 +352,6 @@
                 background-position: center;
                 padding: 75px 0;
 
-            }
-
-            .themeBtn {
-                width: 200px;
-
-                text-align: center;
-                color: white;
-                margin-top: 70px;
-                border: 1px solid white;
-                font-size: 36px;
-                transition: 500ms;
-            }
-
-            .themeBtn:hover {
-                background: rgba(255, 255, 255, 0.85);
-                color: black;
             }
 
             .nav {
@@ -417,7 +418,7 @@
     <div style="height: 100%;" class="pc">
         <nav id="navbar" class="nav d-flex justify-content-between" style="position: fixed; top:0; left:0; z-index:9">
             <div class="navLogo col-lg-4 d-flex align-items-center justify-content-center">
-                <img width="45px" height="45px" src="/img/logo-white.png" alt="">
+                <img width="45px" height="45px" src="/EscapeRoom/test/img/logo-white.png" alt="">
                 <a href="/EscapeRoom/index.html">
                     <p style="font-size: 24px; margin:0 16px;">許多門</p>
                 </a>
@@ -626,11 +627,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="/EscapeRoom/ES-theme.html">
-                                <div
-                                    style="width:200px; height:60px; color:white; border:1px solid white; font-size: 24px; text-align:center; font-weight:bold; padding:10px 0; margin:auto">
-                                    BACK</div>
-                            </a>
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <div class="col-lg-2 themeBtn"> <a href="/EscapeRoom/ES-theme.html">BACK</a></div>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -642,7 +641,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                            <img src="img/logo-white.png" alt="">
+                            <img width="45px" height="45px" src="img/logo-white.png" alt="">
                             <p style="font-size: 24px; margin:0 16px;">許多門</p>
                             <div class="d-flex" style="flex-direction: column;font-size: 6px;">
                                 <p style="letter-spacing:1.2px;">ESCAPE</p>
@@ -669,7 +668,7 @@
             <div class="navLogo lg-4 d-flex align-items-center justify-content-center">
                 <img src="img/logo.png" alt="">
                 <b class="logoName"><a href="/EscapeRoom/index.html">許多門</a></b>
-                <p class="gameName"><a href="/EscapeRoom/index.html">ESCAPE <br>STUDIOS </a></p>
+                <p class="gameName"></p><a href="/EscapeRoom/index.html">ESCAPE <br>STUDIOS </a></p>
             </div>
             <div class="nav-btn-group pc">
                 <ul>
