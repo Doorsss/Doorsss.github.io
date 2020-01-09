@@ -8,23 +8,32 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>ES-theme-bomb</title>
+    <title>Document</title>
     <style>
         * {
             box-sizing: border-box;
             font-family: "Noto Sans TC", sans-serif;
         }
 
+        html,
         body {
             padding: 0;
             margin: 0;
             overflow-x: hidden;
             background-color: #200B0B;
+            scroll-behavior: smooth;
         }
 
         p {
             padding: 0;
             margin: 0;
+        }
+
+        .nav {
+            width: 100%;
+            height: 80px;
+            background-color: #A74141;
+            padding: 0 250px;
         }
 
         a,
@@ -38,21 +47,33 @@
             margin-bottom: unset;
         }
 
-
         ul li {
             list-style: none;
             text-align: center;
             font-size: 24px;
-            font-weight: bold;
             margin-left: 30px;
             line-height: 80px;
+
         }
 
-        .nav {
-            width: 100%;
-            height: 80px;
-            background-color: #A74141;
-            padding: 0 250px;
+        .nav-btn-group ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-btn-group ul li {
+            display: inline-block;
+        }
+
+        .logoName {
+            font-size: 28.6px;
+            padding: 0 10px;
+        }
+
+        .gameName {
+            font-size: 10.73px;
+            margin: 0;
         }
 
         .banner {
@@ -64,16 +85,10 @@
             padding-top: 17%;
         }
 
-        .banner2{
-            width: 100%;
-            height: 70%;
-            background-color:#200B0B;
-            position: absolute;
-            left:0;
-            top: 74%;
-            z-index: 9;
-            transform: skewY(-4.5deg);
-            display: none;
+        .title {
+            font-size: 120px;
+            color: white;
+            line-height: 170px;
         }
 
         .bombgame {
@@ -291,11 +306,42 @@
             display: none;
         }
 
+        .difficulty2 {
+            background: linear-gradient(0deg, #200B0B 0%, #A74141 50%);
+            transform: skewY(-4.5deg);
+            z-index: 99;
+            margin-top: -154px;
+            display: none;
+        }
+
         .game-rules {
             width: 100%;
             height: 900px;
             background-image: url(../EscapeRoom/test/img/bomb-banner2.jpg);
             background-position: center;
+        }
+
+        .themeBtn {
+            width: 200px;
+            text-align: center;
+            color: white;
+            margin-top: 70px;
+            border: 1px solid white;
+            font-size: 36px;
+            transition: .5s;
+        }
+
+        .themeBtn:hover {
+            background: rgba(255, 255, 255, 0.85);
+            color: black;
+        }
+
+        .themeBtn:hover.themeBtn a {
+            color: black;
+        }
+
+        .themeBtn a {
+            color: white;
         }
 
         .information {
@@ -314,68 +360,188 @@
             line-height: 80px;
         }
 
+        .gotop {
+            position: fixed;
+            right: 61px;
+            bottom: 61px;
+            z-index:999;
+        }
+
+        @media(max-width:1420px) {
+            .nav {
+                padding: 0 150px;
+            }
+
+        }
+
+        @media(max-width:1205px) {
+            .nav {
+                padding: 0 50px;
+            }
+
+        }
+
         @media (max-width:576px) {
-            .banner .intro {
-                text-align: center !important;
-                position:absolute;
-                top:100%;
-            }
-
-            .banner2{
-                display:block;
-            }
-
-            .bombgame,
-            .bomb4 {
+            .pc {
                 display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .nav {
+                padding: 0 30px;
+                height: 60px;
+            }
+
+            .ham {
+                width: 40px;
+                height: 40px;
+                position: relative;
+                background-image: url(../EscapeRoom/test/img/menu_b.png);
+                background-size: cover;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 20;
+            }
+
+            .ham ul {
+                position: absolute;
+                top: 44px;
+                left: -2000px;
+                width: 100vw;
+                transition: 500ms;
+                background: #A74141;
+                z-index: 20;
+            }
+
+            .ham ul li {
+                margin: 0;
+            }
+
+            .ham:hover ul {
+                left: 70px;
+                top: 44px;
+                transform: translateX(-100%);
+            }
+
+            .banner{
+                background-image: url(../EscapeRoom/test/img/theme-banner-phone.png);
+            }
+
+            .title {
+                color: #CECAB8;
+                font-size: 48px;
+                line-height: 60px;
+                position: absolute;
+                left: 23%;
+                top: 50%;
+            }
+
+            .difficulty1,
+            .bombgame,
+            .bomb4,
+            .fire,
+            .soldierpc,
+            .logo {
+                display: none !important;
+            }
+
+            .difficulty2,
+            .soldiermobile {
+                display: block !important;
+            }
+
+            main {
+                margin-top: -140px !important;
+            }
+
+            .text {
+                padding-top: 50px;
+                padding-bottom: 0 !important;
+                font-size: 16px !important;
+                line-height: 50px !important;
+            }
+
+            .text-s-16 {
+                font-size: 16px !important;
+                line-height: 50px !important;
+            }
+
+            .p-75 {
+                padding: 75px 0 !important;
+            }
+
+            .p-0 {
+                padding: 0 !important;
+            }
+
+            .m-b-30 {
+                margin-bottom: 30px !important;
+            }
+
+            .m-b-50 {
+                margin-bottom: 50px !important;
+            }
+
+            .m-0 {
+                margin-bottom: 0;
+            }
+
+            .themeBtn {
+                margin-top: 50px;
+            }
+
+            .gotop {
+                right: 30px;
+                bottom: 30px;
             }
         }
     </style>
 </head>
 
 <body>
-    <nav class="nav d-flex justify-content-between">
-        <div class="navLogo col-lg-4 d-flex align-items-center justify-content-center">
-            <img width="45px" height="45px" src="../EscapeRoom/test/img/logo-white.png" alt="">
-            <a href="/EscapeRoom/index.html">
-                <p style="font-size: 24px; margin:0 16px;">許多門</p>
-            </a>
-            <div class="d-flex" style="flex-direction: column;font-size: 6px;">
+    <header>
+        <nav id="navbar" class="nav d-flex justify-content-between">
+            <div class="navLogo lg-4 d-flex align-items-center justify-content-center">
+                <img width="45px" height="45px" src="../EscapeRoom/test/img/logo-white.png" alt="">
+                <p class="logoName"><a href="/EscapeRoom/index.html">許多門</a></p>
                 <a href="/EscapeRoom/index.html">
-                    <p style="letter-spacing:1.2px;">ESCAPE</p>
+                    <p style="letter-spacing:1.7px;">ESCAPE</p>
                     <p>STUDIOS</p>
                 </a>
             </div>
-        </div>
-        <div class="nav-btn-group pc">
-            <ul class="d-flex">
-                <li><a href="/EscapeRoom/ES-aboutEscape.html">關於密室逃脫</a></li>
-                <li><a href="/EscapeRoom/ES-news.html">最新消息</a></li>
-                <li><a href="/EscapeRoom/ES-aboutES.html">關於許多門</a></li>
-                <li><a href="/EscapeRoom/ES-theme.html">主題介紹</a></li>
-                <li><a href="/EscapeRoom/ES-fee.html">收費方式</a></li>
-            </ul>
-        </div>
-        <!-- <div class="ham mobile">
-            <ul>
-                <li><a href="/EscapeRoom/ES-aboutEscape.html">關於密室逃脫</a></li>
-                <li><a href="/EscapeRoom/ES-news.html">最新消息</a></li>
-                <li><a href="/EscapeRoom/ES-aboutES.html">關於許多門</a></li>
-                <li><a href="/EscapeRoom/ES-theme.html">主題介紹</a></li>
-                <li><a href="/EscapeRoom/ES-fee.html">收費方式</a></li>
-            </ul>
-        </div> -->
-    </nav>
+            <div class="nav-btn-group pc">
+                <ul>
+                    <li><a href="/EscapeRoom/ES-aboutEscape.html">關於密室逃脫</a></li>
+                    <li><a href="/EscapeRoom/ES-news.html">最新消息</a></li>
+                    <li><a href="/EscapeRoom/ES-aboutES.html">關於許多門</a></li>
+                    <li><a href="/EscapeRoom/ES-theme.html">主題介紹</a></li>
+                    <li><a href="/EscapeRoom/ES-fee.html">收費方式</a></li>
+                </ul>
+            </div>
+            <div class="ham mobile">
+                <ul>
+                    <li><a href="/EscapeRoom/ES-aboutEscape.html">關於密室逃脫</a></li>
+                    <li><a href="/EscapeRoom/ES-news.html">最新消息</a></li>
+                    <li><a href="/EscapeRoom/ES-aboutES.html">關於許多門</a></li>
+                    <li><a href="/EscapeRoom/ES-theme.html">主題介紹</a></li>
+                    <li><a href="/EscapeRoom/ES-fee.html">收費方式</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <header>
         <div class="banner container-fluid" style="position:relative;">
             <div class="container">
                 <div class="row d-flex justify-content-between align-items-center">
-                    <div class="col-lg-6 col-12" style="font-size: 120px; color: white; line-height: 170px;">
+                    <div class="col-lg-6 col-12 title">
                         <p>爆彈</p>
                         <p>拆除班</p>
                     </div>
-                    <div class="col-lg-4 col-12 d-flex intro"
+                    <div class="col-lg-4 d-flex difficulty1"
                         style="font-size: 24px; color: white; text-align:left; line-height: 65px; flex-direction: column; padding-left:12%;">
                         <p>過關率：15％</p>
                         <p>團隊：★★★</p>
@@ -384,7 +550,6 @@
                     </div>
                 </div>
             </div>
-            <div class="banner2"></div>
         </div>
     </header>
 
@@ -415,40 +580,64 @@
         </div>
     </section>
 
-    <main style="background-color:#200B0B; position:relative; margin-top:-236px; z-index:99">
+    <section>
+        <div class="difficulty2">
+            <div
+                style="font-size: 20px; color: white; text-align:center; line-height: 50px; transform: skewY(4.5deg); padding-top:50px; ">
+                <p>過關率：15％</p>
+                <p>團隊：★★★</p>
+                <p>操作：★★★★★★</p>
+                <p>解謎：★★★</p>
+            </div>
+        </div>
+    </section>
+
+    <main style="position:relative; margin-top:-236px;">
         <section class="container" style="padding-top:200px;">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-lg-8">
                     <img style="width:100%;" src="../EscapeRoom/test/img/bomb2.png" alt="">
                 </div>
-                <div class="col-lg-4"
+                <div class="text col-lg-4"
                     style="color:white; font-size:16px; line-height: 36px; text-align:center; padding-bottom:45px;">
                     <p>面對急遽升高的國際關係，</p>
                     <p>首當其衝的便是這些世界強國，</p>
                     <p>將在2020年舉辦東京奧運的日本，</p>
-                    <p style="color:white; font-size:24px; font-weight:bold; padding:0 ;margin:0">嚴正戒備著<span
-                            style="color:#A74141">恐怖分子</span>的干擾。</p>
+                    <p class="text-s-16" style="color:white; font-size:24px; font-weight:bold; padding:0 ;margin:0">
+                        嚴正戒備著<span style="color:#A74141">恐怖分子</span>的干擾。</p>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid" style="padding-top:200px;">
-            <div class="row d-flex justify-content-center align-items-center">
-                <img class="col-lg-4" style="width: 100%; height: 100%; padding:0;" data-aos="fade-up-right"
-                    src="../EscapeRoom/test/img/soldiers.png" alt="">
-                <div class="col-lg-3 d-flex"
-                    style="color: white; font-size:16px; line-height: 36px; text-align: center; flex-direction: column; padding-bottom: 160px; padding-right:25px">
+        <section class="container-fluid">
+            <div class="soldierpc" style="padding-top:200px;">
+                <div class="row d-flex justify-content-center align-items-center" style="position:relative;">
+                    <img class="col-lg-4" style="width: 100%; height: 100%; padding:0;" data-aos="fade-up-right"
+                        src="../EscapeRoom/test/img/soldiers.png" alt="">
+                    <div class="col-lg-3 d-flex"
+                        style="color: white; font-size:16px; line-height: 36px; text-align: center; flex-direction: column; padding-bottom: 160px; padding-right:25px">
+                        <p style="font-size:24px; color:#A74141;">『反恐特搜-爆彈拆除班』，</p>
+                        <p>就是因應緊急狀況成立的特別部隊，</p>
+                        <p>靠著精良高科技的設備與特別徵召的優秀隊員，</p>
+                        <p>『爆彈拆除班』解決了許多緊急的攻擊事件！</p>
+                    </div>
+                    <img class="col-lg-5" style="width: 100%; height: 100%; padding:0" data-aos="fade-left"
+                        src="../EscapeRoom/test/img/soldiers2.png" alt="">
+                </div>
+            </div>
+            <div class="soldiermobile p-75" style="display:none;">
+                <img class="col-12" data-aos="fade-left" src="../EscapeRoom/test/img/soldiers3.png" alt="">
+                <div class="text col-12 d-flex"
+                    style="color: white; font-size:16px; line-height: 36px; text-align: center; flex-direction: column;">
                     <p style=" color:#A74141;">『反恐特搜-爆彈拆除班』，</p>
                     <p>就是因應緊急狀況成立的特別部隊，</p>
                     <p>靠著精良高科技的設備與特別徵召的優秀隊員，</p>
                     <p>『爆彈拆除班』解決了許多緊急的攻擊事件！</p>
                 </div>
-                <img class="col-lg-5" style="width: 100%; height: 100%; padding:0" data-aos="fade-left"
-                    src="../EscapeRoom/test/img/soldiers2.png" alt="">
             </div>
         </section>
 
-        <section style="padding-top:200px; position:relative">
+        <section class="p-0" style="padding-top:200px; position:relative">
             <div class="container">
                 <div class="row justify-content-center">
                     <img class="col-lg-10" src="../EscapeRoom/test/img/bomb3.png" alt="">
@@ -459,16 +648,16 @@
                     <img class="col-lg bomb4" style="padding:0;" src="../EscapeRoom/test/img/bomb4.png" alt="">
                 </div>
             </div>
-            <div class="row justify-content-center" style="padding-top:75px;">
-                <div class="col-lg-6" style="color: white;font-size: 16px; line-height: 36px; text-align:center">
+            <div class="p-0 row justify-content-center" style="padding-top:75px;">
+                <div class="text col-lg-6" style="color: white;font-size: 16px; line-height: 36px; text-align:center">
                     <p>但是這次......情況有點不一樣，</p>
                     <p>『爆彈拆除班』要面對看起來『束手無策』的困境！</p>
                     <p>剩下60分鐘，你們可以順利解除所有的危機嗎？！</p>
                     <p>要成為『爆彈拆除班』的一員，</p>
-                    <p style="color: #A74141; font-size: 24px; line-height:48px;">你必須要不成功便成仁的決心！</p>
+                    <p class="text-s-16" style="color: #A74141; font-size: 24px; line-height:48px;">你必須要不成功便成仁的決心！</p>
                 </div>
             </div>
-            <div style="margin-top:75px; position:relative">
+            <div class="fire" style="margin-top:75px; position:relative">
                 <div class="container-fluid" style=" text-align: center;">
                     <div class="row">
                         <img src="../EscapeRoom/test/img/fire-back.png" alt="" width="100%">
@@ -486,7 +675,7 @@
         </section>
 
 
-        <section class="container" style="padding:200px 0;">
+        <section class="p-75 container" style="padding:200px 0;">
             <div class="row" style="flex-direction: column; align-items:center;">
                 <img src="../EscapeRoom/test/img/key.png" alt="">
                 <p style="color: #E55A5A;font-size: 24px; font-weight:bold; line-height:48px;">特別提醒</p>
@@ -499,19 +688,21 @@
     <section>
         <div class="game-rules d-flex justify-content-center align-items-center">
             <div class="container">
-                <div class="row d-flex justify-content-around" style="margin-bottom:75px;">
-                    <div class="col-lg-4">
+                <div class="m-0 row d-flex justify-content-around" style="margin-bottom:75px;">
+                    <div class="m-b-50 col-lg-4">
                         <div style=" text-align: center;">
                             <img src="../EscapeRoom/test/img/white-man.png" alt="">
-                            <div style="color: #E55A5A; font-size: 24px; font-weight:bold; margin-bottom: 20px;">挑戰人數
+                            <div class="m-b-30"
+                                style="color: #E55A5A; font-size: 24px; font-weight:bold; margin-bottom: 20px;">挑戰人數
                             </div>
                             <p style="color: white;font-size: 16px;">4~8人</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="m-b-50 col-lg-4">
                         <div style=" text-align: center;">
                             <img src="../EscapeRoom/test/img/clock.png" alt="">
-                            <div style="color: #E55A5A;font-size: 24px; font-weight:bold; margin-bottom: 20px;">挑戰時間
+                            <div class="m-b-30"
+                                style="color: #E55A5A;font-size: 24px; font-weight:bold; margin-bottom: 20px;">挑戰時間
                             </div>
                             <p style="color: white;font-size: 16px;">60分鐘</p>
                         </div>
@@ -519,45 +710,49 @@
                     <div class="col-lg-4">
                         <div style="text-align: center;">
                             <img src="../EscapeRoom/test/img/key.png" alt="">
-                            <div style="color: #E55A5A;font-size: 24px; font-weight:bold; line-height:48px;">場次時間</div>
+                            <div class="m-b-30"
+                                style="color: #E55A5A;font-size: 24px; font-weight:bold; line-height:48px;">場次時間</div>
                             <p style="color: white;font-size: 16px; line-height: 36px;">11:00 / 12:20 / 13:50 / 15:20 /
                             </p>
                             <p style="color: white;font-size: 16px; line-height: 36px;">16:50 / 18:10 / 19:30</p>
                         </div>
                     </div>
                 </div>
-                <a href="/EscapeRoom/ES-theme-doctor.html">
-                    <div
-                        style="width:200px; height:60px; color:white; border:1px solid white; font-size: 24px; text-align:center; font-weight:bold; padding:10px 0; margin:auto">
-                        NEXT</div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="container-fluid" style="padding:0;">
-        <div class="information d-flex align-items-center justify-content-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                        <img src="../EscapeRoom/test/img/logo-white.png" alt="">
-                        <p style="font-size: 24px; margin:0 16px;">許多門</p>
-                        <div class="d-flex" style="flex-direction: column;font-size: 6px;">
-                            <p style="letter-spacing:1.2px;">ESCAPE</p>
-                            <p>STUDIOS</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-9 d-flex align-items-center justify-content-center"
-                        style="font-size: 16px;">
-                        <p style="line-height:36px;">台中市西區公益路155巷9號2樓（公益路勤美誠品斜對面）</p>
-                        <p>TEL 04-23020080 / 0971283166</p>
-                    </div>
-                    <a class="col-lg-1 col-3 d-flex align-items-center justify-content-center"
-                        href="https://www.facebook.com/TCDOORSSS"><img src="../EscapeRoom/test/imgimg/fb_b.png" alt=""></a>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="themeBtn"> <a href="/EscapeRoom/ES-theme-doctor.html">NEXT</a></div>
                 </div>
             </div>
         </div>
-        <div class="copyright">Copyright &copy; 許多門 Inc. All rights reserved</div>
+        </div>
+    </section>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="information d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo col-lg-4 d-flex align-items-center justify-content-center">
+                            <img src="../EscapeRoom/test/img/logo-white.png" alt="">
+                            <p style="font-size: 24px; margin:0 16px;">許多門</p>
+                            <div class="d-flex" style="flex-direction: column;font-size: 6px;">
+                                <p style="letter-spacing:1.2px;">ESCAPE</p>
+                                <p>STUDIOS</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-9 d-flex align-items-left justify-content-center"
+                            style="font-size: 16px; line-height:36px; flex-direction: column;">
+                            <p>TEL 04-23020080 / 0971283166</p>
+                            <p>台中市西區公益路155巷9號2樓（公益路勤美誠品斜對面）</p>
+                        </div>
+                        <div class="col-lg-1 col-3 d-flex align-items-center justify-content-center">
+                            <a href="https://www.facebook.com/TCDOORSSS"><img src="../EscapeRoom/test/img/fb_b.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">Copyright &copy; 許多門 Inc. All rights reserved</div>
+            <div class="gotop"><a href="#navbar"><img src="../EscapeRoom/test/img/gotop.png" alt=""></a></div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
