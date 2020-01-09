@@ -59,32 +59,57 @@
         .narrative {
             margin-top: 150px;
             padding: 100px 0;
+            position: relative;
             /* border: 2px solid transparent;
             border-width: 2px 0 2px 0;
             border-image: linear-gradient(to right, #B0B63F 0%, #21210C 100%);
             border-image-slice: 1; */
-
         }
+
+        .borderA:before {
+            content: '';
+            position: absolute;
+            height: 52%;
+            width: 5px;
+            background: linear-gradient(#21210C 0%, #B0B63F 100%);
+            bottom: 0%;
+            right: 0%;
+        }
+
+        .borderA::after {
+            content: '';
+            position: absolute;
+            height: 52%;
+            width: 5px;
+            background: linear-gradient(#B0B63F 0%, #21210C 100%);
+            transform: rotate(90deg);
+            bottom: -26%;
+            right: 19.6%
+        }
+
 
         .bl:before {
             content: '';
             position: absolute;
-            bottom: auto;
-            right: auto;
             height: 52%;
             width: 5px;
-            right: 17%;
+            left: 0.5%;
+            top: 1%;
             background: linear-gradient(#B0B63F 0%, #21210C 100%);
         }
-        .br:before {
+
+        .bl::after {
             content: '';
             position: absolute;
-            bottom: auto;
-            right: auto;
             height: 52%;
             width: 5px;
-            background: linear-gradient(#B0B63F 0%, #21210C 100%);
+            left: 20%;
+            top: -25%;
+            background: linear-gradient(#21210C 0%, #B0B63F 100%);
+            transform: rotate(90deg);
         }
+
+
         /* .bl:after {
             content: '';
             position: absolute;
@@ -95,7 +120,7 @@
             background: linear-gradient(#21210C 0%, #B0B63F 100%);
             transform: rotate(90deg);
         } */
-        
+
 
 
         .aboutES-open {
@@ -301,7 +326,7 @@
         </div>
     </section>
     <section>
-        <div class="container narrative  br bl">
+        <div class="container narrative borderA">
             <div class="row d-flex justify-content-center bl">
                 <div class="col-lg-7 text-lg-center">
                     <h2>結合『實境解謎』+『團體動力』</h2>
