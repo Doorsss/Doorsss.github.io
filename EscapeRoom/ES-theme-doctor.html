@@ -294,15 +294,19 @@
         @media(max-width:576px) {
             html {
                 overflow: scroll !important;
-                overflow-y:hidden;
+                overflow-y: hidden;
             }
 
-            .logoName{
-                font-size:28.6px;
+            .logoName {
+                font-size: 28.6px;
             }
 
-            .gameName{
-                font-size:10.73px;
+            .gameName {
+                font-size: 10.73px;
+            }
+
+            .gameName a {
+                font-size: 10.73px !important;
             }
 
             .pc {
@@ -379,7 +383,7 @@
             }
 
             .ham {
-                display:block;
+                display: block;
                 width: 40px;
                 height: 40px;
                 position: relative;
@@ -435,36 +439,36 @@
 
 <body>
     <!-- 電腦 -->
-    <div style="height: 100%;" class="pc">
-        <nav id="navbar" class="nav d-flex justify-content-between" style="position: fixed; top:0; left:0; z-index:9">
-            <div class="navLogo lg-4 d-flex align-items-center justify-content-center">
-                <img src="../EscapeRoom/test/img/logo-white.png" alt="">
-                <p class="logoName"><a href="/EscapeRoom/index.html">許多門</a></p>
-                <a class="gameName" href="/EscapeRoom/index.html">
-                    <p style="letter-spacing:1.3px;">ESCAPE</p>
-                    <p>STUDIOS</p>
-                </a>
-            </div>
-            <div class="nav-btn-group pc">
-                <ul>
-                    <li><a href="/EscapeRoom/ES-aboutEscape.html">關於密室逃脫</a></li>
-                    <li><a href="/EscapeRoom/ES-news.html">最新消息</a></li>
-                    <li><a href="/EscapeRoom/ES-aboutES.html">關於許多門</a></li>
-                    <li><a href="/EscapeRoom/ES-theme.html">主題介紹</a></li>
-                    <li><a href="/EscapeRoom/ES-fee.html">收費方式</a></li>
-                </ul>
-            </div>
-            <div class="ham mobile">
-                <ul>
-                    <li><a href="/EscapeRoom/ES-aboutEscape.html">關於密室逃脫</a></li>
-                    <li><a href="/EscapeRoom/ES-news.html">最新消息</a></li>
-                    <li><a href="/EscapeRoom/ES-aboutES.html">關於許多門</a></li>
-                    <li><a href="/EscapeRoom/ES-theme.html">主題介紹</a></li>
-                    <li><a href="/EscapeRoom/ES-fee.html">收費方式</a></li>
-                </ul>
-            </div>
-        </nav>
 
+    <nav id="navbar" class="nav d-flex justify-content-between" style="position: fixed; top:0; left:0; z-index:9">
+        <div class="navLogo lg-4 d-flex align-items-center justify-content-center">
+            <img src="../EscapeRoom/test/img/logo-white.png" alt="">
+            <p class="logoName"><a href="/EscapeRoom/index.html">許多門</a></p>
+            <a class="gameName" href="/EscapeRoom/index.html">
+                <p style="letter-spacing:1.3px;">ESCAPE</p>
+                <p>STUDIOS</p>
+            </a>
+        </div>
+        <div class="nav-btn-group pc">
+            <ul>
+                <li><a href="/EscapeRoom/ES-aboutEscape.html">關於密室逃脫</a></li>
+                <li><a href="/EscapeRoom/ES-news.html">最新消息</a></li>
+                <li><a href="/EscapeRoom/ES-aboutES.html">關於許多門</a></li>
+                <li><a href="/EscapeRoom/ES-theme.html">主題介紹</a></li>
+                <li><a href="/EscapeRoom/ES-fee.html">收費方式</a></li>
+            </ul>
+        </div>
+        <div class="ham mobile">
+            <ul>
+                <li><a href="/EscapeRoom/ES-aboutEscape.html">關於密室逃脫</a></li>
+                <li><a href="/EscapeRoom/ES-news.html">最新消息</a></li>
+                <li><a href="/EscapeRoom/ES-aboutES.html">關於許多門</a></li>
+                <li><a href="/EscapeRoom/ES-theme.html">主題介紹</a></li>
+                <li><a href="/EscapeRoom/ES-fee.html">收費方式</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div style="height: 100%;" class="pc">
         <div class="slides-container">
             <div class="slides" data-0="transform:translate(0%, 0%)" data-50p=" "
                 data-150p="transform:translate(0%, -50%)" data-200p=" " data-300p="transform:translate(-25%, -50%)"
@@ -619,8 +623,7 @@
                                 <div class="col-lg-4">
                                     <div style=" text-align: center;">
                                         <img src="../EscapeRoom/test/img/people_d.png" alt="">
-                                        <div
-                                            style="color: #549FB6; font-size: 36px;">
+                                        <div style="color: #549FB6; font-size: 36px;">
                                             挑戰人數</div>
                                         <p style="color: white; font-size: 16px; line-height: 2;">4~8人</p>
                                     </div>
@@ -628,8 +631,7 @@
                                 <div class="col-lg-4">
                                     <div style=" text-align: center;">
                                         <img src="../EscapeRoom/test/img/time_d.png" alt="">
-                                        <div
-                                            style="color: #549FB6;font-size: 36px;">
+                                        <div style="color: #549FB6;font-size: 36px;">
                                             挑戰時間
                                         </div>
                                         <p style="color: white;font-size: 16px; line-height: 2;">60分鐘</p>
@@ -638,8 +640,7 @@
                                 <div class="col-lg-4">
                                     <div style=" text-align: center;">
                                         <img src="../EscapeRoom/test/img/key_d.png" alt="">
-                                        <div
-                                            style="color: #549FB6;font-size: 36px;">
+                                        <div style="color: #549FB6;font-size: 36px;">
                                             場次時間
                                         </div>
                                         <p style="color: white;font-size: 16px; line-height: 2;">11:20 / 12:40 /
@@ -691,7 +692,7 @@
     </div>
 
     <!-- 手機 -->
-    <header class="phone">
+    <!-- <header class="phone">
         <nav id="navbar" class="nav d-flex justify-content-between">
             <div class="navLogo lg-4 d-flex align-items-center justify-content-center">
                 <img src="../EscapeRoom/test/img/logo-white.png" alt="">
@@ -717,7 +718,7 @@
                 </ul>
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <main class="phone">
         <div class="box">
