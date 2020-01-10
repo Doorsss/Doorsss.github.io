@@ -150,7 +150,7 @@
             width: 200px;
             text-align: center;
             color: white;
-            margin-top: 70px;
+            margin-top: 75px;
             border: 1px solid white;
             font-size: 36px;
             transition: .5s;
@@ -162,6 +162,7 @@
         }
 
         .themeBtn:hover.themeBtn a {
+            text-decoration: none;
             color: black;
         }
 
@@ -293,6 +294,15 @@
         @media(max-width:576px) {
             html {
                 overflow: scroll !important;
+                overflow-y:hidden;
+            }
+
+            .logoName{
+                font-size:20.04px;
+            }
+
+            .gameName{
+                font-size:7.51px;
             }
 
             .pc {
@@ -427,10 +437,10 @@
     <div style="height: 100%;" class="pc">
         <nav id="navbar" class="nav d-flex justify-content-between" style="position: fixed; top:0; left:0; z-index:9">
             <div class="navLogo lg-4 d-flex align-items-center justify-content-center">
-                <img width="45px" height="45px" src="../EscapeRoom/test/img/logo-white.png" alt="">
+                <img src="../EscapeRoom/test/img/logo-white.png" alt="">
                 <p class="logoName"><a href="/EscapeRoom/index.html">許多門</a></p>
-                <a href="/EscapeRoom/index.html">
-                    <pu>ESCAPE</pu>
+                <a class="gameName" href="/EscapeRoom/index.html">
+                    <p style="letter-spacing:1.1px;">ESCAPE</p>
                     <p>STUDIOS</p>
                 </a>
             </div>
@@ -603,38 +613,37 @@
 
                 <div class="slide-8">
                     <section class="game-rules d-flex justify-content-center align-items-center">
-                        <div class="container" style="padding-bottom: 10%;">
-                            <div class="row d-flex justify-content-around" style="margin-bottom:75px;">
+                        <div class="container" style="padding-bottom: 5%;">
+                            <div class="row d-flex justify-content-around">
                                 <div class="col-lg-4">
                                     <div style=" text-align: center;">
                                         <img src="../EscapeRoom/test/img/people_d.png" alt="">
                                         <div
-                                            style="color: #549FB6; font-size: 36px; margin-bottom: 20px;">
+                                            style="color: #549FB6; font-size: 36px;">
                                             挑戰人數</div>
-                                        <p style="color: white;font-size: 16px;">4~8人</p>
+                                        <p style="color: white; font-size: 16px; line-height: 2;">4~8人</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div style=" text-align: center;">
                                         <img src="../EscapeRoom/test/img/time_d.png" alt="">
                                         <div
-                                            style="color: #549FB6;font-size: 36px; margin-bottom: 20px;">
+                                            style="color: #549FB6;font-size: 36px;">
                                             挑戰時間
                                         </div>
-                                        <p style="color: white;font-size: 16px;">60分鐘</p>
+                                        <p style="color: white;font-size: 16px; line-height: 2;">60分鐘</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div style=" text-align: center;">
                                         <img src="../EscapeRoom/test/img/key_d.png" alt="">
                                         <div
-                                            style="color: #549FB6;font-size: 36px; line-height:48px; margin-bottom: 20px;">
+                                            style="color: #549FB6;font-size: 36px;">
                                             場次時間
                                         </div>
-                                        <p style="color: white;font-size: 16px; line-height: 36px;">11:20 / 12:40 /
-                                            14:10 /
-                                            15:40 /</p>
-                                        <p style="color: white;font-size: 16px; line-height: 36px;">17:10 / 18:30 /
+                                        <p style="color: white;font-size: 16px; line-height: 2;">11:20 / 12:40 /
+                                            14:10 /</p>
+                                        <p style="color: white;font-size: 16px; line-height: 2;">15:40 / 17:10 / 18:30 /
                                             19:50
                                         </p>
                                     </div>
@@ -655,10 +664,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="logo col-lg-4 d-flex align-items-center justify-content-center">
-                                <img wight="45px" height="45px" src="../EscapeRoom/test/img/logo-white.png" alt="">
+                                <img src="../EscapeRoom/test/img/logo-white.png" alt="">
                                 <p style="font-size: 24px; margin:0 16px;">許多門</p>
                                 <div class="d-flex" style="flex-direction: column;font-size: 6px;">
-                                    <p>ESCAPE</p>
+                                    <p style="letter-spacing: 1.1px;">ESCAPE</p>
                                     <p>STUDIOS</p>
                                 </div>
                             </div>
@@ -668,14 +677,14 @@
                                 <p>台中市西區公益路155巷9號2樓（公益路勤美誠品斜對面）</p>
                             </div>
                             <div class="col-lg-1 col-3 d-flex align-items-center justify-content-center">
-                                <a href="https://www.facebook.com/TCDOORSSS"><img src="../EscapeRoom/test/img/fb_b.png"
+                                <a href="https://www.facebook.com/TCDOORSSS"><img src="../EscapeRoom/test/img/fb_d.png"
                                         alt=""></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="copyright">Copyright &copy; 許多門 Inc. All rights reserved</div>
-                <div class="gotop"><a href="#navbar"><img src="../EscapeRoom/test/img/gotop.png" alt=""></a></div>
+                <a class="gotop" href="#"><img src="../EscapeRoom/test/img/gotop.png" alt=""></a>
             </div>
         </footer>
     </div>
@@ -802,7 +811,7 @@
                         <div class="col-lg-4 d-sm-flex align-items-center justify-content-center d-none">
                             <img src="img/logo.png" alt="">
                             <b class="logoName">許多門</b>
-                            <p class="gameName">ESCAPE <br>STUDIOS </p>
+                            <p class="gameName">ESCAPE <br>STUDIOS</p>
                         </div>
                         <div class="col-lg-7 col-9">
                             <b class="info">TEL 04-23020080/0971283166<br>
@@ -815,7 +824,7 @@
                 </div>
             </div>
             <div class="copyright">Copyright &copy; 許多門 Inc. All rights reserved</div>
-            <div class="gotop"><a href="#navbar"><img src="img/gotop.png" alt=""></a></div>
+            <a class="gotop" href="#"><img src="img/gotop.png" alt=""></a>
         </div>
     </footer>
 
