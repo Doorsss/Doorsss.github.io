@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>ES-theme-doctor</title>
     <style>
         html,
         body {
@@ -150,7 +150,7 @@
             width: 200px;
             text-align: center;
             color: white;
-            margin-top: 75px;
+            margin-top: 50px;
             border: 1px solid white;
             font-size: 36px;
             transition: .5s;
@@ -184,6 +184,19 @@
             color: #3E7794;
             text-align: center;
             line-height: 80px;
+        }
+        @media(max-width:1420px) {
+            .nav {
+                padding: 0 150px;
+            }
+
+        }
+
+        @media(max-width:1205px) {
+            .nav {
+                padding: 0 50px;
+            }
+
         }
 
         /* 手機 */
@@ -317,10 +330,10 @@
             .box {
                 width: 100%;
                 height: 578px;
-                background-image: url(./doctorImg/moon_banner_p.png);
+                background-image: url(./img/theme-banner-doc.png);
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: center;
+                background-position: 65% 0;
                 overflow: hidden;
                 padding: 280px 0 0 60px;
             }
@@ -364,7 +377,7 @@
 
             .game-rules {
                 width: 100%;
-                height: 900px;
+                height: 1035px;
                 background-image: url(./doctorImg/bot_bg_p.png);
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -428,6 +441,9 @@
 
             .margin-top75 {
                 margin-top: 75px;
+            }
+            .fix1{
+                margin: 40px 0;
             }
         }
     </style>
@@ -508,7 +524,7 @@
                                         <p style="color:#3E7794; font-size:24px;">『御醫』總是掌握了當時最高的醫術，
                                         </p>
                                         <p style="color:white; font-size:16px; line-height: 36px;">
-                                            並且受到皇帝極度的信任才能成為獨當一面的御醫。
+                                            並且受到皇帝的信任才能成為獨當一面的御醫。
                                         </p>
                                     </div>
                                 </div>
@@ -567,8 +583,8 @@
                             <div class="row" style="position:relative;">
                                 <img class="col-lg" src="../EscapeRoom/test/img/comic_04.png" style="width:100%;"
                                     alt="">
-                                <img style="transform:scaleX(-1); position:absolute; top:20px; right:150px;"
-                                    src="../EscapeRoom/test/img/skull ver2.gif" alt="">
+                                <!-- <img style="transform:scaleX(-1); position:absolute; top:20px; right:150px;"
+                                    src="../EscapeRoom/test/img/skull ver2.gif" alt=""> -->
                             </div>
                             <div class="row justify-content-center" style="margin-top:100px;">
                                 <p class="col-lg-5" style="color:white; font-size:16px; text-align:center;">
@@ -601,7 +617,7 @@
                         <div class="Border d-flex justify-content-center align-items-center"
                             style="text-align: center; transform:translateY(35px)">
                             <div class="col-lg-3">
-                                <img src="../EscapeRoom/test/img/key.png" alt="">
+                                <img src="../EscapeRoom/test/img/key_d.png" alt="">
                                 <div style="color: white; font-size: 16px; line-height: 36px;">
                                     <p style="color: #549FB6;font-size: 36px; line-height:48px;">
                                         特別提醒</p>
@@ -719,14 +735,14 @@
         </nav>
     </header>
 
-    <main class="phone">
+    <main style="margin-top: 60px;" class="phone">
         <div class="box">
             <img src="./doctorImg/title_p.png" alt="">
         </div>
         <div class="container text-center">
             <div class="row justify-content-center">
                 <div class="gradient col-12 d-flex justify-content-center"></div>
-                <p class="rule margin-top50">過關率：40％ <br>
+                <p class="rule">過關率：40％ <br>
                     團隊：★★★★<br>
                     操作：★★★★★<br>
                     解謎：★★★</p>
@@ -734,7 +750,7 @@
                         alt=""></div>
                 <div class="col-12 margin-top50">
                     <p> <span class="speakerloser">『御醫』總是掌握了當時的最高醫術，</span> <br>
-                        <span class="speakerBoss"> 並受到皇帝極度信任才能成為獨當一面的御醫。</span></p>
+                        <span class="speakerBoss"> 並受到皇帝信任才能成為獨當一面的御醫。</span></p>
                 </div>
                 <div class="col-12 margin-top75"><img width="100%" height="228px" src="./doctorImg/comic_02_p.png"
                         alt=""></div>
@@ -766,7 +782,7 @@
                 </div>
                 <div class="col-12 margin-top75"><img src="./doctorImg/key_d_p.png" alt=""> </div>
                 <p class="titleName margin-top50">特別提醒</p>
-                <p class="speakerBoss"> 要揭穿御醫的詭計，必須了解各種藥理針灸醫術， 記憶與理解的情報很多，也可能有陰森血腥的場景。</p>
+                <p class="speakerBoss"> 要揭穿御醫的詭計，必須了解各種藥理針灸醫術， 記憶與理解的情報很多，也有陰森血腥的場景。</p>
             </div>
         </div>
         <section>
@@ -781,7 +797,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-center fix1">
                                 <img class="" src="./doctorImg/time_d_p.png" alt="">
                                 <p class="titleName text-center col-12">挑戰時間</p>
                                 <p class="speakerBoss text-center col-12">60分鐘</p class="speakerBoss">
